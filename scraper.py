@@ -3,7 +3,8 @@ import scrapy
 
 class BookSpider(scrapy.Spider):
     name = "bookspider"
-    start_urls = []
+    url = "INSERT URL"
+    start_urls = [url]
 
     def parse(self, response):
         for article in response.css("article.product_pod"):
